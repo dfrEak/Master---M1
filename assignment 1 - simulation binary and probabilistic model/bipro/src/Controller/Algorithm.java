@@ -39,7 +39,7 @@ public class Algorithm {
         for(int i=0;i<alpha.getAlpha().size();i++)
         {
             //calculate p=sigmoid(s)
-            Double p=1/(1 + Math.pow( Math.E, -1*alpha.getAlpha().get(i)*s));
+            double p=1/(1 + Math.pow( Math.E, -1*alpha.getAlpha().get(i)*s));
             retval.getP().add(p);
             
             //calculate n trial
